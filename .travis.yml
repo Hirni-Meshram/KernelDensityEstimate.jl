@@ -1,12 +1,15 @@
 language: julia
-
+group: edge
+virt: lxd
+sudo: true
 os:
   - linux
-  - osx
+#  - osx
 
 arch:
   - amd64
   - arm64
+  - arm64-graviton64
 
 julia:
   - 0.7
